@@ -25,7 +25,7 @@ function wordpressversion_shortcode() {
 add_shortcode( 'wpversion', 'wordpressversion_shortcode' );
 
 // This is the Javascript that will fix the 5.6.1, expressed as a function
-function fiveSixOneErrorResoluion() {
+function fiveSixOneErrorResolution() {
     if (get_bloginfo ('version') == '5.6.1') {
         ?>
         <script>
@@ -85,4 +85,4 @@ function fiveSixOneErrorResoluion() {
 }
 
 // insert code (or not, depending on version) at admin_print_footer_scripts hook
-add_action( 'admin_print_footer_scripts', 'fiveSixOneErrorResoluion' );
+add_action( 'admin_print_footer_scripts', 'fiveSixOneErrorResolution' );
